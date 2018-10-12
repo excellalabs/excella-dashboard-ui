@@ -1,0 +1,35 @@
+.tool-bar {
+    width: 100%; /* Set a specific width */
+    min-height: 64px;
+    background-color:#35353E; /* Dark-grey background */
+    display: block;
+    top: 0;
+    left: 0;
+    position: fixed;
+}
+
+.title {
+    display:block;
+    margin-top:36px;
+    margin-bottom: 18px;
+    font-family: Muli;
+    font-size: 24px;
+    color: white;
+}
+
+.logo {
+    width: 164px;
+    height: auto;
+    margin-bottom: 18px;
+    margin-left: 48px;
+    margin-top: 36px;
+}
+
+.github-icon {
+    color:white; 
+    font-size:36px; 
+    float: right; 
+    margin-top: 48px;
+    margin-right: 48px;
+    margin-bottom: 18px;
+}

@@ -10,14 +10,14 @@ import { Data } from './Data';
 
 export class AppComponent {
 
-  title = 'Excella Dashboard - Monthly Activity Report';
+  title = 'Excella Dashboard';
   data = new Data;
-  url = 'http://service-consumer-excella-demo.router.default.svc.cluster.local/monthly-report/';
+  url = 'http://aacd821f2ce3711e899460223b0bba6b-207489040.us-east-2.elb.amazonaws.com:8080/monthly-report/';
   constructor(private httpClient: HttpClient) {}
   chartData = [
     { data: [], label: 'Headcount' },
     { data: [], label: 'BD Pipeline' },
-    { data: [], label: 'Recruting Pipeline' },
+    { data: [], label: 'Recruiting Pipeline' },
     { data: [], label: 'Bench+' }
   ];
   ngOnInit() {
@@ -26,7 +26,7 @@ export class AppComponent {
       this.chartData = [
         { data: [this.data.headCount], label: 'Headcount' },
         { data: [this.data.bdPipeline], label: 'BD Pipeline' },
-        { data: [this.data.recrutingPipeline], label: 'Recruting Pipeline' },
+        { data: [this.data.recrutingPipeline], label: 'Recruiting Pipeline' },
         { data: [this.data.benchPluse ], label: 'Bench+' }
       ];
       console.log(this.data);

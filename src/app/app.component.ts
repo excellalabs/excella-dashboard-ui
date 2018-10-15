@@ -10,24 +10,24 @@ import { Data } from './Data';
 
 export class AppComponent {
 
-  title = 'Excella Dashboard - Monthly Activity Report';
+  title = 'Excella Dashboard - Container Management Inquiries';
   data = new Data;
   url = 'http://10.68.245.220:8080/monthly-report/';
   constructor(private httpClient: HttpClient) {}
   chartData = [
-    { data: [], label: 'Headcount' },
-    { data: [], label: 'BD Pipeline' },
-    { data: [], label: 'Recruting Pipeline' },
-    { data: [], label: 'Bench+' }
+    { data: [], label: 'Vanilla Kubernetes' },
+    { data: [], label: 'OpenShift' },
+    { data: [], label: 'Mesos' },
+    { data: [], label: 'Nomad' }
   ];
   ngOnInit() {
     this.httpClient.get(this.url).subscribe((res: Data) => {
       this.data = res;
       this.chartData = [
-        { data: [this.data.headCount], label: 'Headcount' },
-        { data: [this.data.bdPipeline], label: 'BD Pipeline' },
-        { data: [this.data.recrutingPipeline], label: 'Recruting Pipeline' },
-        { data: [this.data.benchPluse ], label: 'Bench+' }
+        { data: [this.data.headCount], label: 'Vanilla Kubernetes' },
+        { data: [this.data.bdPipeline], label: 'OpenShift' },
+        { data: [this.data.recrutingPipeline], label: 'Mesos' },
+        { data: [this.data.benchPluse ], label: 'Nomad' }
       ];
       console.log(this.data);
     });

@@ -1,11 +1,18 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
+
+<div class="tool-bar">
+  <a href="/">
+    <img src='assets/img/logo.png' class="logo"/>
+  </a>
+  <a href="https://github.com/excellalabs/excella-dashboard-ui"><i class="github-icon fa fa-github"></i></a>
+</div>
+<div style="text-align:center; margin-top:136px; font-family: Muli; font-weight: 800">
   <h1>
-    Welcome to {{ title }}!
+    {{ title }}
   </h1>
 
 <div style="text-align:center; width: 90%;">
-  <canvas 
+  <canvas style="display: inline;"
       baseChart
       [chartType]="'bar'"
       [datasets]="chartData"

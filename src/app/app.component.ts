@@ -10,9 +10,9 @@ import { Data } from './Data';
 
 export class AppComponent {
 
-  title = 'Excella Dashboard - Container Management Inquiries';
+  title = 'Excella Dashboard';
   data = new Data;
-  url = 'http://10.68.245.220:8080/monthly-report/';
+  url = 'http://aacd821f2ce3711e899460223b0bba6b-207489040.us-east-2.elb.amazonaws.com:8080/monthly-report/';
   constructor(private httpClient: HttpClient) {}
   chartData = [
     { data: [], label: 'Kubernetes and Helm' },

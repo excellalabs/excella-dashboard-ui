@@ -15,7 +15,7 @@ export class AppComponent {
   url = 'http://10.68.245.220:8080/monthly-report/';
   constructor(private httpClient: HttpClient) {}
   chartData = [
-    { data: [], label: 'Vanilla Kubernetes' },
+    { data: [], label: 'Kubernetes and Helm' },
     { data: [], label: 'OpenShift' },
     { data: [], label: 'Mesos' },
     { data: [], label: 'Nomad' }

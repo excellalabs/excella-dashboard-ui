@@ -10,7 +10,7 @@ import { Data } from './Data';
 
 export class AppComponent {
 
-  title = 'Excella Dashboard';
+  title = 'Excella Dashboard - Container Management Inquiries';
   data = new Data;
   url = 'http://aacd821f2ce3711e899460223b0bba6b-207489040.us-east-2.elb.amazonaws.com:8080/monthly-report/';
   constructor(private httpClient: HttpClient) {}
